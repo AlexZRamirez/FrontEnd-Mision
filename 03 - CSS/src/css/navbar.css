@@ -1,0 +1,67 @@
+/*NAVBAR*/
+body,html{
+    margin:0;
+    padding: 0;
+    /*background-color: grey;*/
+    /*background-image: url("imagenes/pasteles2.jpg");*/
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffffd3;
+    z-index: 2;
+}
+#logo{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 8%;
+    margin-top: 25px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    color: #2848c6;
+}
+ul{
+    width: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5%;
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+a{   
+    text-align: center;
+    color: #6d7b93;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Open Sans',bold;
+    font-size: 1vw;
+}
+a:hover{
+    color: #2848c6;
+    transition: 0.5s;
+}
+
+.caja{
+    font-size: 1vw;
+    font-weight: 600;
+    border-style: solid;
+    border-color: #2848c6;
+    background-color: #2848c6;
+    color: #ffffff;
+    width: 140px;
+    height: 50px;
+    border-radius: 8px;
+    
+}
+.caja:hover{
+    color: #2848c6;
+    border-color: #b6c8f5;
+    background-color: #b6c8f5;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 8px;
+}
