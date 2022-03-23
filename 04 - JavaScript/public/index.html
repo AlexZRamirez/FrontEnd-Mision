@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./css/img/poke-icon.png"/>
+    <script src="poke.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Pokedex</title> 
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <a href="#"><h1 id="logo">POKEDEX</h1></a>
+    </header>
+    <!--NAVBAR FIN-->
+
+    <!--POKEDEX-->
+    <section id="contenedor">
+        <div class="pokedex-izq">
+            <div data-poke-card class="poke-card">
+                <div id="poke-nombre" data-poke-nombre>Pokedex</div>
+                <div class="content-info">
+                    <div data-poke-img-contenedor class="img-container">
+                        <img data-poke-img class="poke-img" src="./css/img/pokeball.jpg" width="100px" height="100px">
+                    </div>
+                    <div class="info-poke">
+                        <div data-poke-id></div>
+                        <div data-poke-altura></div>
+                        <div data-poke-peso></div>
+                        <div data-poke-exp></div>
+                    </div>
+                </div>
+            </div>
+            <form id="busqueda" onsubmit="buscarPokemon(event)">
+                <button onsubmit="buscarPokemon(event)" id="btn-buscar">S</button>
+                <input type="text" name="pokemon" autocomplete="off" id="barra-busqueda" placeholder="Buscar">               
+            </form>
+        </div>
+
+        <div class="pokedex-der">
+            <div class="box">
+                <center>
+                <h2 class="titulo-elem">Tipo/s</h3>
+                <div data-poke-tipos class="poke-tipos"></div>
+                <h2 class="titulo-est">Estadisticas</h3>
+                <div data-poke-stats class="poke-stats">
+                    <table tabla-test>
+                    </table>
+                </div>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <section class="sect2">
+        <center>
+            <!-- <div class="fondo"> -->
+                <!-- <h1>Movimientos del pokemon</h1> -->
+            <div data-poke-movs class="poke-movs"></div>
+        </center>
+            <!-- </div> -->
+            
+    </section>
+    <footer class="piepag">
+        <h1>Desarrollado por Alejandro Zamora Ramírez</h1>
+    </footer>
+
+    <!--POKEDEX FIN-->
+    
+</body>
+</html>
